@@ -5,6 +5,8 @@ package _02_code_flow._2_robot_spiral;
  */
 
 
+import java.awt.Color;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class RobotSpiral {
@@ -12,16 +14,22 @@ public class RobotSpiral {
 	public static void main(String[] args) {
 		
 		// Create a new Robot
-		
+		Robot Brandon = new Robot();
 		// Set your robot's pen down 
-		
+		Brandon.penDown();
 		// SPEED. Set the robot to go at max speed (100)
-
+Brandon.setSpeed(100);
 		// COUNT. Create an int variable that will count how many lines of the spiral we have drawn.
 			//        Start its value as zero.
-
+int count = 5;
 		// LOOP. Start a while loop to repeat the COLOR, DRAW, TURN, and COUNT code below until 50 lines have been drawn
-
+while ( count < 50 ) {
+	Brandon.setRandomPenColor();
+	Brandon.setPenWidth(5);
+	Brandon.move(5*count);
+	Brandon.turn(360/7);
+	count+=1;
+}
 			// COLOR.   Have the robot set a random pen color:      setRandomPenColor()
 
 			// DRAW.    Move the robot (5*count) pixels

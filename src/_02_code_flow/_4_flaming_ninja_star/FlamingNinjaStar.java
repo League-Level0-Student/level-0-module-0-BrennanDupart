@@ -10,34 +10,42 @@ public class FlamingNinjaStar {
 		int flameSize = 130;		//the length of the flaming arms
 		
 		// Make a new robot, and set it's pen down.
-
+Robot whale = new Robot();
 		// Set the robot speed to 100
-		
+		whale.setSpeed(100);
+	
 		// Set the robot window size to 800 x 800
-
+whale.setWindowSize(800,800);
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
-		
+		int V1 = 0;
 	       //  LOOP. Start a while loop to repeat all of the code below ONE time (we will change this later)
-
+while ( V1 < 25 ) {
+	
 			   // TURN RIGHT     Turn the robot 1/8 of a circle (hint: 360 degrees will turn a full circle)
-		
+	whale.penDown();
+	whale.turn(45);	
 			   // MOVE           Move the robot 64 pixels
-
+whale.move(64);
 			   // TURN LEFT      Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
-			
-			   // DRAW FLAME     Move the robot the distance in the variable flameSize
-			
+	whale.turn(-40);		
+			   // DRAW FLAME     Move the robot the distance in the variable flameSiz
+	whale.move(flameSize);	
 				//               Turn the robot 170 degrees
-			
+	whale.turn(170);
 				//               Move the robot the distance in the variable flameSize (again)
-			
+	whale.move(flameSize);
+
 			   // TURN RIGHT     Turn the robot 64 degrees to the right
+			whale.turn(64);
 			
 				// MOVE         Move the robot the distance in the variable baseSize
-		
+		whale.setPenColor(Color.black);
+		whale.move(baseSize);
+		whale.setPenColor(Color.yellow);
 				//  INCREASE COUNT. Increase the count by 1
-		
+		V1+=1;
+}
 		//  End the while loop here
 		
 		// TEST   Run the program. Check that your shape is the same as the first picture in the recipe. 

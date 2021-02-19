@@ -31,7 +31,7 @@ Hat.resize(200,250);
   }
 
 void draw() {
-  if (mouseButton == RIGHT)  {mustache}
+  if (mouseButton == RIGHT)
   face.resize(1000,1000);
 // 6. DRAW FACE.    Use the background() command to make the face the background of the sketch
 //    Run the program to see if the face is drawn. Get this working before you go on.
