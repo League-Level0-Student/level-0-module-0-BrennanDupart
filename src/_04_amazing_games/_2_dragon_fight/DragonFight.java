@@ -40,7 +40,7 @@ public class DragonFight {
 				// or a kick
 	JOptionPane.showInputDialog("Do you want to attack the dragon with a yell or a kick?");
 				// 4. If they typed in "yell":
-	
+	if 
 					  // -- Find a random number between 0 and 10 and store it in playerAttack. Use
 					  // ran.nextInt(10)
 			
