@@ -26,6 +26,7 @@ rainbow = loadImage("rainbow.jpg");
 //    Try to find one with a transparent background. Use the same idea as in step 1.
 //    Make sure the file name is correct for the unicorn image you saved.  
 unicorn = loadImage("unicorn.png");
+size (200,200);
 
 }
 
